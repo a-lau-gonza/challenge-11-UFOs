@@ -1,30 +1,40 @@
 # UFO Data Analysis
 
 ## Overview of Project
-Our task for this week was to help out at Pewlett Hackard in figuring out how many employees will be retiring soon, how many will be able to mentor before they leave, and how that will affect the newer employees who *do* need to be trained/mentored. The __*Silver Tsunami*__ is coming.
+
+#### Prompt: Dana’s webpage and dynamic table are working as intended, but she’d like to provide a more in-depth analysis of UFO sightings by allowing users to filter for multiple criteria at the same time. In addition to the date, you’ll add table filters for the city, state, country, and shape.
+
+Our task for this week was to help out Dana with her own project in creating a simple website to both __*present and filter*__ through logged data of UFO sightings. With a small dataset provided, the challenge was in both creating a *html* and *javascript* file to present on a local server, before presumably publishing the website. 
+
+The project was slightly above the bare mminimum for presentation as it mostly acts as a proof of concept.
 
 ## Results
-* There are currently 240,124 current employees working at Pewlett Hackard as of the data given. 
+* As we reach the home page set by our html file we will run across a simple layout with our set up titles and paragraphs on UFOs and their possible sightings. All of this is flavor text.
 
 ![Homepage](Write-Up_Resources/home.png)
 
-* Out of the 240,124 current employees, about 90,398 are set to retire soon. That is an upcoming near __*38%*__ of the current workforce will be leaving within the coming few years and the struggle to replace them will be strenuous on the mentors and be a constant battle in maintaing the number of employees consistent.
+* As we head down towards the bottom left, we will see a table labled for filtering our data seen on the right. __*Without the use of any filters*__ the entire dataset is already laid out and available to scroll through. Using the filters and following with a hit of the *Enter* key will change the results available to match the filters set up by user.
 
-![Homepage](Write-Up_Resources/home.png)
+![Homepage](Write-Up_Resources/filter_ex.png)
 
-* The __*Silver Tsunami*__ will consist of those born around 1955 and the mentors will be around 1965. This gives a cushion of 10 years of mentorship for the eligible mentors if *all* of them are instated as such.
+![Homepage](Write-Up_Resources/filter_ex_case_sens.png)
 
-![Homepage](Write-Up_Resources/home.png)
+* Here is an example of the filter in use as I typed in __*md*__ within the *State* filter to narrow down the search results to only include those sightings placed within __*Maryland*__. The dataset is limited to what is available, so there is not many options available to sift through, though it again is a proof of concept.
+* Also, note that in this example, it will only recognize __lowercase__ letters due to the dataset and a lack of broadening of filtering to exclude case sensitivity.
 
-* If each were to mentor all 10 years until retirement, they would each have to mentor 5-6 new employees a year, but this will __ONLY__ replace those who left in the __*Silver Tsunami*__ originating from 1955. To replace those born in the time frame between 1955-1965 would have to be closer to double in order to keep the *current employee* serial near constant. Fighting againt the __*Silver Tsunami of 1955*__ will take a lot of time and effort from even younger __*Tsunamis*__.
+![Homepage](Write-Up_Resources/filter_use.png)
+
+![Homepage](Write-Up_Resources/filter_use_case_sens.png)
+
 
 ## Summary
-   * How many roles will need to be filled as the "silver tsunami" begins to make an impact? 
-         
-        * 90,398 employees will retire within the __*Silver Tsunami of 1955*__. A 1 to 1 replacement would be a minimum, but as a company wants to grow, it must also increase the number of employees, so a larger ratio must be the true goal.
+* Overall, as a proof of concept the web page does work properly and displays the filtration of data properly. However, there are a few things needed in order to make it more viable as a functional web page:
+    * The data set is __extremely small__, though this is a proof of concept, it still cannot be ignored that a proper leading UFO sighting website should have a vast wealth of UFO sightings to filter through.
+    * The code doesn't account for __case sensitivity__. On a user interface level, it is necessary to block that case sensitivity or else first time users will think that the web page isn't working properly.
+    * Just making it __look better__ will significantly improve user reviews. In this day and age plenty of people, myself included, will think a website is sketchy simply based off of first impressions on whether the site looks professional or not. If this isn't improved, user numbers would never rise any higher as people could think it's a web site for phishing information. 
+    * The __*State* and *Country* filters__ would be counterintuitive if there were more countries added, especially those that don't use states. UFO sightings are an international experience. 
+    * Lastly, __more resources__ such as tabs that include more famous sightings, even photos or videos, news clippings, would make it much more immersive as a user experience in helping show the vast array of purported sightings are around the world.
 
-![Homepage](Write-Up_Resources/home.png)
+![Homepage](Write-Up_Resources/home_full.png)
 
-   * Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
-         
-        * Depending on how long it takes to mentor/train a single new employee, with a timeline of 10 a year constituting a little over a month of personal training by a mentor, it also depends on how much training is *REQUIRED*. *IF* one month is enough, then it is within reason to believe that PH can keep its employee count consistent. However, as I looked into the data given at the upcoming __*Silver Tsunamis of 1965 and 1975*__ the number of young employees eligible for mentoring is nonexistent. PH *MUST* focus on also hiring younger talent while there's still mentorship available, or else the company will shrink with time.
+  
